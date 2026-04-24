@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-neo-base text-neutral-800 antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Video player styles */
+.video-container {
+  @apply relative overflow-hidden rounded-xl;
+}
+
+.video-container video {
+  @apply w-full h-full object-contain;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e5ec;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a3b1c6;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8b9bb5;
+}
